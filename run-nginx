@@ -1,0 +1,4 @@
+#!/bin/sh
+
+htpasswd -bc /etc/nginx/docker-registry.htpasswd $AUTH_USERNAME $AUTH_PASSWOD
+exec /usr/sbin/nginx
