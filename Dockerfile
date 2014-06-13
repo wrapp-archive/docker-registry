@@ -1,4 +1,4 @@
-FROM registry
+FROM registry:latest
 
 RUN apt-get update
 RUN apt-get dist-upgrade -y
