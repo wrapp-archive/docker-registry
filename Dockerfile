@@ -18,12 +18,6 @@ RUN cat additional-config.conf >> /docker-registry/config/config_sample.yml
 
 ENV SETTINGS_FLAVOR prod
 ENV WORKER_SECRET_KEY fsekfhefsefefe
-ENV CACHE_LRU_REDIS_HOST docker-hub-001.4smnlw.0001.euw1.cache.amazonaws.com
-ENV CACHE_LRU_REDIS_PORT 6379
-#ENV CACHE_LRU_REDIS_PASSWORD fisk
-ENV CACHE_REDIS_HOST docker-hub-001.4smnlw.0001.euw1.cache.amazonaws.com
-ENV CACHE_REDIS_PORT 6379
-#ENV CACHE_REDIS_PASSWORD fisk
 
 EXPOSE 80
 
