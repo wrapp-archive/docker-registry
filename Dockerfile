@@ -12,10 +12,6 @@ ADD nginx.conf /etc/nginx/nginx.conf
 ADD run-nginx /usr/local/bin/run-nginx
 RUN chmod 755 /usr/local/bin/run-nginx
 
-# Add support for cloudfront
-ADD additional-config.conf additional-config.conf
-RUN cat additional-config.conf >> /docker-registry/config/config_sample.yml
-
 ENV SETTINGS_FLAVOR prod
 ENV WORKER_SECRET_KEY fsekfhefsefefe
 
